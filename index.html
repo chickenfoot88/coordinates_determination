@@ -6,12 +6,22 @@
   <title>Coordinates Determination</title>
 </head>
 <body>
-  <div id="grid"></div>
+  <div class="wrapper">
+    <svg id="grid"></svg>
+  </div>
   <script src="script.js"></script>
   <style>
-    #grid svg {
-      width: 500px;
-      height: 500px;
+    body, html {
+      height: 100%;
+      padding: 0;
+    }
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </body>
